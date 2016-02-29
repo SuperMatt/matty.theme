@@ -14,7 +14,7 @@
     <div class="col-md-9">
         <div class="panel panel-default">
             <div class="panel-body">
-                <?php the_title(); ?>
+                <h2><?php the_title(); ?></h2>
             </div>
             <div class="panel-body">
                 <?php the_content(); ?>
