@@ -21,7 +21,7 @@
     <div class="col-md-4">
         <div class="panel panel-default">
             <div class="panel-body">
-                <?php the_post_thumbnail('4col', array('class' => 'img-rounded', 'style' => 'width: 100%')); ?>
+                <?php the_post_thumbnail('4col', array('class' => 'img-rounded img-responsive')); ?>
             </div>
         </div>
     </div>
