@@ -1,4 +1,4 @@
-<?php /* Template Name: Home */ ?>
+<?php /* Template Name: Featured Image */ ?>
 
 <?php
     wp_head();
