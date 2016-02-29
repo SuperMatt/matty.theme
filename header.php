@@ -96,21 +96,17 @@
       }
 
       .aligncenter {
-        text-align: center;
-        float: center;
-        display: inline;
+        display: block;
+        margin-left: auto;
+        margin-right: auto
 
       }
       .alignleft {
-        text-align: left;
         float: left;
-        display: inline;
 
       }
       .alignright {
-        text-align: right;
         float: right;
-        display: inline;
 
       }
       .alignjustify {
