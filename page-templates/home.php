@@ -1,3 +1,5 @@
+<?php /* Template Name: Home */ ?>
+
 <div class="container contentblock">
 <div class="row spacer">
 <?php
