@@ -98,25 +98,25 @@
       .aligncenter {
         text-align: center;
         float: center;
-        display: inline-block;
+        display: inline;
 
       }
       .alignleft {
         text-align: left;
         float: left;
-        display: inline-block;
+        display: inline;
 
       }
       .alignright {
         text-align: right;
         float: right;
-        display: inline-block;
+        display: inline;
 
       }
       .alignjustify {
         text-align: justify;
         float: left;
-        display: inline-block;
+        display: inline;
 
       }
 
