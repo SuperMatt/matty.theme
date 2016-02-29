@@ -10,7 +10,7 @@
     ?>
     <div class="col-md-12">
         <div class="panel panel-default">
-            <div class="panel-heading">
+            <div class="panel-body">
             <h2><?php the_title(); ?></h2>
             </div>
             <div class="panel-body">
