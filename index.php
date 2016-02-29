@@ -12,9 +12,8 @@
         <div class="panel panel-default">
             <div class="panel-body">
             <h2><?php the_title(); ?></h2>
-            </div>
-            <div class="panel-body">
             <p class="text-muted"><?php the_date(); ?> - <?php the_time(); ?></p>
+            <hr>
             <?php the_content(); ?>
             </div>
         </div>
