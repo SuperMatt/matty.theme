@@ -15,8 +15,7 @@
         <div class="panel panel-default">
             <div class="panel-body">
                 <h2><?php the_title(); ?></h2>
-            </div>
-            <div class="panel-body">
+            <hr>
                 <?php the_content(); ?>
             </div>
         </div>
@@ -24,7 +23,7 @@
     <div class="col-md-3">
         <div class="panel panel-default">
             <div class="panel-body">
-                <?php the_post_thumbnail('4col', array('class' => 'img-rounded img-responsive')); ?>
+                <?php the_post_thumbnail('4col', array('class' => 'img-responsive')); ?>
             </div>
         </div>
     </div>
