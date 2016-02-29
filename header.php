@@ -95,6 +95,18 @@
         margin-top: 25px;
       }
 
+      .aligncenter {
+        text-align: center;
+      }
+      .alignleft {
+        text-align: left;
+      }
+      .alignright {
+        text-align: right;
+      }
+      .alignjustify {
+        text-align: justify;
+      }
 
     </style>
   </head>
