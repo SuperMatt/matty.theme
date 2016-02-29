@@ -10,8 +10,9 @@
     ?>
     <div class="col-md-12">
         <div class="panel panel-default">
-            <div class="panel-body">
+            <div class="panel-heading">
             <h2><?php the_title(); ?></h2>
+            <div class="panel-body">
             <p class="text-muted"><?php the_date(); ?> - <?php the_time(); ?></p>
             <?php the_content(); ?>
             </div>
