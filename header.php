@@ -98,18 +98,26 @@
       .aligncenter {
         text-align: center;
         float: center;
+        display: inline-block;
+
       }
       .alignleft {
         text-align: left;
         float: left;
+        display: inline-block;
+
       }
       .alignright {
         text-align: right;
         float: right;
+        display: inline-block;
+
       }
       .alignjustify {
         text-align: justify;
         float: left;
+        display: inline-block;
+
       }
 
     </style>
