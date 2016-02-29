@@ -97,15 +97,19 @@
 
       .aligncenter {
         text-align: center;
+        float: center;
       }
       .alignleft {
         text-align: left;
+        float: left;
       }
       .alignright {
         text-align: right;
+        float: right;
       }
       .alignjustify {
         text-align: justify;
+        float: left;
       }
 
     </style>
