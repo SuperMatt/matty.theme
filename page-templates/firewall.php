@@ -278,7 +278,8 @@ $( document ).ready( function () {
 }
 </style>
 <div height="100%">
-    <h1>Firewall Rule Generator</h1>
+    <h2>Firewall Rule Generator</h2>
+    <hr>
         <form class="form-horizontal">
             <div class="form-group">
                 <label for="sourceip" class="col-sm-2 control-label">Source IP</label>
