@@ -1,4 +1,4 @@
-<?php /* Template Name: Featured Image */ ?>
+<?php /* Template Name: Firewall */ ?>
 
 <?php
     wp_head();
