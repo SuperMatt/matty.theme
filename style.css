@@ -97,6 +97,10 @@ li.current-menu-item {
         padding-top: 14px;
     }
 
+    .navigation li {
+        height: auto;
+    }
+
     .list-modal li a {
         color: #000;
         background-color: #FFF;
@@ -104,6 +108,15 @@ li.current-menu-item {
         margin: 0;
         height: auto;
         width: auto;
+    }
+
+
+    .list-modal li a:hover {
+        background-color: #FFF;
+    }
+
+    .list-modal li.current-menu-item {
+        background-color: #FFF;
     }
 
 }
