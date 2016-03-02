@@ -109,7 +109,7 @@ body {
         float: left;
     }
 
-    .dropdown-menu {
+    .dropdown .open {
         position: fixed;
         left: -5;
         right: 25%
