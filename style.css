@@ -97,5 +97,14 @@ li.current-menu-item {
         padding-top: 14px;
     }
 
+    .list-modal {
+        color: #000;
+        background-color: #FFF;
+        padding: 0;
+        margin: 0;
+        height: auto;
+        width: auto;
+    }
+
 }
 

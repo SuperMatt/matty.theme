@@ -30,7 +30,7 @@
               <div class="modal-dialog">
                   <div class="modal-content">
                     <div class="modal-body">
-                      <?php wp_nav_menu( array( 'theme_location' => 'header-menu', 'menu_class' => 'list list-unstyled' ) ); ?>
+                      <?php wp_nav_menu( array( 'theme_location' => 'header-menu', 'menu_class' => 'list list-unstyled list-modal' ) ); ?>
                     </div>
                   </div>
               </div>
