@@ -64,9 +64,11 @@ li.current-menu-item {
 
 }
 
-@media (max-width: 991px) {
+
+@media (max-width: 768px) {
+
     .navglyph{
-      color: #fff;
+        color: #fff;
     }
 
     .popup-menu {
@@ -85,9 +87,6 @@ li.current-menu-item {
         height: 50px;
         padding-top: 10px;
     }
-}
-
-@media (max-width: 768px) {
 
     .title {
         font-size: 18px;
