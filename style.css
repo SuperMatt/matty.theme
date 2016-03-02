@@ -115,7 +115,7 @@ body {
         right: 25%;
         top: -8px;
         font-size: 18px;
-        /*overflow-y: scroll;*/
+        overflow-y: scroll;
         height: calc(100% + 8px);
     }
 
