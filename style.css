@@ -107,7 +107,14 @@ body {
         min-height: 46px;
         padding-top: 14px;
         float: left;
-        display: inline-block;
+    }
+
+    .dropdown-menu {
+        position: fixed;
+        left: -5;
+        right: 25%
+        top: 0;
+        bottom: 0;
     }
 
 }
