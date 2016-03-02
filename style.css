@@ -97,7 +97,7 @@ li.current-menu-item {
         padding-top: 14px;
     }
 
-    .list-modal li {
+    .list-modal li a {
         color: #000;
         background-color: #FFF;
         padding: 0;
