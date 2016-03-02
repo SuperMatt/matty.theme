@@ -116,10 +116,13 @@ body {
         top: -5px;
         bottom: -5px;
         font-size: 18px;
-        line-height: 2;
     }
 
-    .dropdownmenu .current-menu-item {
+    dropdownmenu li {
+        line-height: 1.5;
+    }
+
+    .dropdownmenu li.current-menu-item {
         border-bottom: 1px solid #000;
     }
 
