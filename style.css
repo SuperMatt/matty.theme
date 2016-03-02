@@ -94,6 +94,7 @@ li.current-menu-item {
     .title {
         font-size: 18px;
         min-height: 46px;
+        padding-top: 5px;
     }
 
 }
