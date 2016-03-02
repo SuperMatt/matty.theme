@@ -88,13 +88,13 @@ li.current-menu-item {
     }
 
     .topbar {
-        min-height: 30px;
+        min-height: 46px;
     }
 
     .title {
         font-size: 18px;
-        min-height: 30px;
-        padding-top: 6px;
+        min-height: 46px;
+        padding-top: 14px;
     }
 
 }
