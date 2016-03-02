@@ -118,7 +118,7 @@ body {
         font-size: 18px;
     }
 
-    dropdownmenu li a {
+    .dropdownmenu li a {
         line-height: 2;
     }
 
