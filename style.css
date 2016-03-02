@@ -51,37 +51,6 @@ li.current-menu-item {
     text-decoration: none;
 }
 
-@media (min-width: 1170px) {
-    .navigation {
-        padding-left: 60px;
-        padding-right: 60px;
-    }
-
-}
-
-@media (max-width: 991px) {
-    .navglyph{
-      color: #fff;
-    }
-
-    .popup-menu {
-        font-size: 24px;
-        font-family: comfortaa;
-        color: #FFF;
-        background-color: #F44336;
-        height: 100%;
-    }
-
-    .popup-menu a {
-        margin-left: 27px;
-    }
-
-    .popup-menu li {
-        height: 50px;
-        padding-top: 10px;
-    }
-}
-
 .spacer {
     margin-top: 25px;
 }
@@ -189,5 +158,45 @@ a img.aligncenter {
 	top: 5px;
 	width: auto;
 	z-index: 100000; /* Above WP toolbar. */
+}
+
+
+@media (min-width: 1170px) {
+    .navigation {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+
+}
+
+@media (max-width: 991px) {
+    .navglyph{
+      color: #fff;
+    }
+
+    .popup-menu {
+        font-size: 24px;
+        font-family: comfortaa;
+        color: #FFF;
+        background-color: #F44336;
+        height: 100%;
+    }
+
+    .popup-menu a {
+        margin-left: 27px;
+    }
+
+    .popup-menu li {
+        height: 50px;
+        padding-top: 10px;
+    }
+}
+
+@media (max-width: 768) {
+
+    .title {
+        font-size: 18px;
+    }
+
 }
 
