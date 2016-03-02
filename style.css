@@ -65,7 +65,7 @@ li.current-menu-item {
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 991px) {
 
     .navglyph{
         color: #fff;
