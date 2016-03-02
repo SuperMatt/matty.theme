@@ -118,8 +118,8 @@ body {
         font-size: 18px;
     }
 
-    dropdownmenu li {
-        line-height: 1.5;
+    dropdownmenu li a {
+        line-height: 2;
     }
 
     .dropdownmenu li.current-menu-item {
