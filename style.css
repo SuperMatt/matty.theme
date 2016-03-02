@@ -116,6 +116,11 @@ body {
         top: -5px;
         bottom: -5px;
         font-size: 18px;
+        line-height: 1.5;
+    }
+
+    .dropdownmenu .current-menu-item {
+        text-decoration: underline;
     }
 
 }
