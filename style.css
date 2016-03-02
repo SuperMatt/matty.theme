@@ -107,6 +107,7 @@ body {
         min-height: 46px;
         padding-top: 14px;
         float: left;
+        display: inline-block;
     }
 
 }
