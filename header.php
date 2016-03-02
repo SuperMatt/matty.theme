@@ -11,11 +11,11 @@
     <script>
         $(document).ready(function() {
             $('#dropdownmenu').on('shown.bs.dropdown', function() {
-                $('html, body').css('overflow', 'hidden');
+                $("html, body").css("overflow", "hidden");
             });
 
             $('#dropdownmenu').on('hiden.bs.dropdown', function() {
-                $('html, body').css('overflow', 'auto');
+                $("html, body").css("overflow", "auto");
             });
         });
     </script>
