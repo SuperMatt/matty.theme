@@ -1,8 +1,9 @@
 <?php /* Template Name: Featured Image */ ?>
 
 <?php
-    wp_head();
     get_header();
+    wp_head();
+
 ?>
 
 <div class="container contentblock">
