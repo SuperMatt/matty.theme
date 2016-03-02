@@ -90,6 +90,8 @@ li.current-menu-item {
 
     .title {
         font-size: 18px;
+        height: 100%;
+        padding-top: 50%;
     }
 
 }
