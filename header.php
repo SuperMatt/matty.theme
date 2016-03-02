@@ -11,7 +11,6 @@
     <script>
         $( document ).ready(function() {
             $('#dropdownmenu').on('show.bs.dropdown', function() {
-                alert('open');
                 $("html, body").css("overflow", "hidden");
             });
 
