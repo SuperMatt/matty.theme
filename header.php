@@ -9,7 +9,7 @@
     <link rel='stylesheet' href="<?php echo get_template_directory_uri(); ?>/wordpress.css">
     <link rel='stylesheet' href="<?php echo get_template_directory_uri(); ?>/style.css">
     <script>
-        $(document).ready(function() {
+        $( document ).ready(function() {
             $('#dropdownmenu').on('shown.bs.dropdown', function() {
                 alert('open');
                 $("html, body").css("overflow", "hidden");
