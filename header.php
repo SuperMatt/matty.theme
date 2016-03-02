@@ -24,7 +24,7 @@
           <div class="hidden-md hidden-lg">
             <div class="dropdown">
                 <button class="btn btn-link pull-left title navglyph" data-toggle="dropdownmenu" arias-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-menu-hamburger navglyph"></span></button>
-                <?php wp_nav_menu( array( 'theme_location' => 'header-menu', 'menu_class' => 'dropdown-menu' 'container'=>false, 'items_wrap' => '<ul aria-labelledby="dropdownmenu" id="%1$s" class="%2$s">%3$s</ul>') ); ?>
+                <?php wp_nav_menu( array( 'theme_location' => 'header-menu', 'menu_class' => 'dropdown-menu', 'container'=>false, 'items_wrap' => '<ul aria-labelledby="dropdownmenu" id="%1$s" class="%2$s">%3$s</ul>') ); ?>
             </div>
             <span class="pull-left">
               <div class="title"><?php bloginfo('name'); ?></div>
