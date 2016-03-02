@@ -116,6 +116,7 @@ body {
         top: -8px;
         bottom: -8px;
         font-size: 18px;
+        overflow-y: scroll;
     }
 
     .dropdown-menu li a {
