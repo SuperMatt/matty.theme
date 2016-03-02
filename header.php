@@ -22,7 +22,7 @@
             </span>
           </div>
           <div class="hidden-md hidden-lg">
-            <div class="dropdown">
+            <div class="dropdown" id="dropdown-parent">
                 <button type="button" class="btn btn-link title" id="dropdownmenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     <span class="glyphicon glyphicon-menu-hamburger navglyph"></span>
                 </button>
