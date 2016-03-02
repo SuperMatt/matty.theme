@@ -15,7 +15,7 @@
         <div class="col-sm-12 navigation">
           <div class="hidden-sm hidden-xs">
             <span class="pull-left">
-              <div class="title"><?php bloginfo('name'); ?></div>
+              <div class="title"><a href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a></div>
             </span>
             <span class="pull-right">
               <?php wp_nav_menu( array( 'theme_location' => 'header-menu', 'menu_class' => 'list list-inline' ) ); ?>
@@ -28,7 +28,7 @@
                 </button>
                 <?php wp_nav_menu( array( 'theme_location' => 'header-menu', 'menu_class' => 'dropdown-menu', 'container'=>false, 'items_wrap' => '<ul aria-labelledby="dropdownmenu" id="%1$s" class="%2$s">%3$s</ul>') ); ?>
             </div>
-            <div class="title"><?php bloginfo('name'); ?></div>
+            <div class="title"><a href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a></div>
           </div>
         </div>
       </div>
