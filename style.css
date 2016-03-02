@@ -122,7 +122,7 @@ body {
         line-height: 2;
     }
 
-    .dropdown-menu li.current-menu-item {
+    .dropdown-menu li.current-menu-item a {
         border-bottom: 1px solid #000;
     }
 
