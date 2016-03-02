@@ -114,9 +114,9 @@ body {
         left: -8px;
         right: 25%;
         top: -8px;
-        bottom: -8px;
         font-size: 18px;
         overflow-y: scroll;
+        height: calc(100% + 8px);
     }
 
     .dropdown-menu li a {
