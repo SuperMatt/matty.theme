@@ -28,7 +28,7 @@
                 </button>
                 <?php wp_nav_menu( array( 'theme_location' => 'header-menu', 'menu_class' => 'dropdown-menu', 'container'=>false, 'items_wrap' => '<ul aria-labelledby="dropdownmenu" id="%1$s" class="%2$s">%3$s</ul>') ); ?>
             </div>
-            <div class="title"><?php bloginfo('name'); ?></div>
+            <span class="title"><?php bloginfo('name'); ?></span>
           </div>
         </div>
       </div>
