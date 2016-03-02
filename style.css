@@ -113,8 +113,9 @@ body {
         position: fixed;
         left: -5px;
         right: 25%;
-        top: 0;
-        bottom: 0;
+        top: -5px;
+        bottom: -5px;
+        font-size: 18px;
     }
 
 }
