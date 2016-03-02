@@ -108,5 +108,9 @@ body {
         padding-top: 14px;
     }
 
+    .dropdown-menu {
+        margin-top: 18px;
+    }
+
 }
 
