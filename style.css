@@ -93,10 +93,8 @@ li.current-menu-item {
     }
 
     .title {
-        position: absolute;
         font-size: 18px;
         height: 30px;
-        padding-top: 50%;
     }
 
 }
