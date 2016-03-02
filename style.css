@@ -120,10 +120,12 @@ body {
 
     .dropdown-menu li a {
         min-height: 46px;
+        padding-top: 14px;
     }
 
     .dropdown-menu li.current-menu-item a {
         background-color: #F44336;
+        color: #fff;
     }
 
 }
