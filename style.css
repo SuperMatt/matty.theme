@@ -12,6 +12,14 @@ body {
     font-family: comfortaa;
 }
 
+.title a {
+    color: #fff;
+}
+
+.title a:hover{
+    text-decoration: none;
+}
+
 .navigation {
     font-family: raleway;
 }
