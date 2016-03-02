@@ -27,16 +27,12 @@
               <div class="title"><?php bloginfo('name'); ?></div>
             </span>
             <div class="modal" id="menu" tab-index="-1" role="dialog">
-              <div class="row topbar">
-              <div class="col-sm-12 navigation">
-                <button class="btn btn-link pull-left title navglyph" data-toggle="modal" data-target="#menu" style="padding-left: 27px"><span class="glyphicon glyphicon-remove navglyph"></span></button>
-                <span>
-                  <div class="title"><?php bloginfo('name'); ?></div>
-                </span>
-                <span>
-                  <?php wp_nav_menu( array( 'theme_location' => 'header-menu', 'menu_class' => 'list list-unstyled' ) ); ?>
-                </span>
-              </div>
+              <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-body">
+                      <?php wp_nav_menu( array( 'theme_location' => 'header-menu', 'menu_class' => 'list list-unstyled' ) ); ?>
+                    </div>
+                  </div>
               </div>
             </div>
           </div>
