@@ -28,17 +28,7 @@
                 </button>
                 <?php wp_nav_menu( array( 'theme_location' => 'header-menu', 'menu_class' => 'dropdown-menu', 'container'=>false, 'items_wrap' => '<ul aria-labelledby="dropdownmenu" id="%1$s" class="%2$s">%3$s</ul>') ); ?>
             </div>
-            <span class="pull-left">
-              <div class="title"><?php bloginfo('name'); ?></div>
-            </span>
-            <div class="modal" id="menu" tab-index="-1" role="dialog">
-              <div class="modal-dialog">
-                  <div class="modal-content">
-                    <div class="modal-body">
-                    </div>
-                  </div>
-              </div>
-            </div>
+            <div class="title"><?php bloginfo('name'); ?></div>
           </div>
         </div>
       </div>
