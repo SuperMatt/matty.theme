@@ -8,6 +8,17 @@
     <title><?php the_title() ?></title>
     <link rel='stylesheet' href="<?php echo get_template_directory_uri(); ?>/wordpress.css">
     <link rel='stylesheet' href="<?php echo get_template_directory_uri(); ?>/style.css">
+    <script>
+        $(document).ready(function() {
+            $('#dropdownmenu').on('show.bs.dropdown', function() {
+                $("html, body").css({'overflow': 'hidden', 'height': '100%'})
+            });
+
+            $('#dropdownmenu').on('hide.bs.dropdown', function() {
+                $("html, body").css({'overflow': 'auto', 'height': 'auto'})
+            });
+        });
+    </script>
   </head>
   <body>
     <div class="container-fluid">
