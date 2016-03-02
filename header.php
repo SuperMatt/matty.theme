@@ -10,11 +10,11 @@
     <link rel='stylesheet' href="<?php echo get_template_directory_uri(); ?>/style.css">
     <script>
         $(document).ready(function() {
-            $('#dropdownmenu').on('show.bs.dropdown', function() {
+            $('#dropdownmenu').on('shown.bs.dropdown', function() {
                 $('html, body').css('overflow', 'hidden');
             });
 
-            $('#dropdownmenu').on('hide.bs.dropdown', function() {
+            $('#dropdownmenu').on('hiden.bs.dropdown', function() {
                 $('html, body').css('overflow', 'auto');
             });
         });
