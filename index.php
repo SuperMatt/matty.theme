@@ -15,6 +15,7 @@
             <p class="text-muted"><?php the_date(); ?> - <?php the_time(); ?></p>
             <hr>
             <?php the_content(); ?>
+            <hr>
             </div>
         </div>
     </div>

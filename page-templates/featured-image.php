@@ -18,6 +18,7 @@
                 <h2><?php the_title(); ?></h2>
             <hr>
                 <?php the_content(); ?>
+            <hr>
             </div>
         </div>
     </div>
