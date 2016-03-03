@@ -22,6 +22,16 @@
         <div class="panel panel-default">
             <div class="panel-body">
                 <?php the_post_thumbnail('4col', array('class' => 'img-responsive')); ?>
+                <?php
+                if ( function_exists( 'sharing_display' ) ) {
+                    sharing_display( '', true );
+                }
+
+                if ( class_exists( 'Jetpack_Likes' ) ) {
+                    $custom_likes = new Jetpack_Likes;
+                    echo $custom_likes->post_likes( '' );
+                }
+                ?>
             </div>
         </div>
     </div>

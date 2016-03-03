@@ -8,12 +8,28 @@
 <?php
     if ( have_posts() ) : while ( have_posts() ) : the_post();
     ?>
-    <div class="col-md-12">
+    <div class="col-md-9">
         <div class="panel panel-default">
             <div class="panel-body">
             <h2><?php the_title(); ?></h2>
             <hr>
             <?php the_content(); ?>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="panel panel-default">
+            <div class="panel-body">
+                <?php
+                if ( function_exists( 'sharing_display' ) ) {
+                    sharing_display( '', true );
+                }
+
+                if ( class_exists( 'Jetpack_Likes' ) ) {
+                    $custom_likes = new Jetpack_Likes;
+                    echo $custom_likes->post_likes( '' );
+                }
+                ?>
             </div>
         </div>
     </div>

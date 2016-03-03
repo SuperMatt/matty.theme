@@ -8,7 +8,7 @@
 <div class="container contentblock">
 <div class="row spacer">
 
-    <div class="col-md-12">
+    <div class="col-md-9">
         <div class="panel panel-default">
             <div class="panel-body">
 
@@ -154,11 +154,27 @@ Now run the install:
 
 
 
-</div>
 
-</div>
-</div>
-</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-3">
+        <div class="panel panel-default">
+            <div class="panel-body">
+                <?php
+                if ( function_exists( 'sharing_display' ) ) {
+                    sharing_display( '', true );
+                }
+
+                if ( class_exists( 'Jetpack_Likes' ) ) {
+                    $custom_likes = new Jetpack_Likes;
+                    echo $custom_likes->post_likes( '' );
+                }
+                ?>
+            </div>
+        </div>
+    </div>
 </div>
 </div>
 
