@@ -85,26 +85,6 @@ body {
 
 @media (max-width: 991px) {
 
-    .navglyph{
-        color: #fff;
-    }
-
-    .popup-menu {
-        font-size: 24px;
-        font-family: comfortaa;
-        color: #FFF;
-        background-color: #F44336;
-        height: 100%;
-    }
-
-    .popup-menu a {
-        margin-left: 27px;
-    }
-
-    .popup-menu li {
-        height: 50px;
-        padding-top: 10px;
-    }
 
     .topbar {
         min-height: 46px;
@@ -115,6 +95,16 @@ body {
         min-height: 46px;
         padding-top: 10px;
         float: left;
+    }
+
+
+}
+
+
+@media(max-width: 767px) {
+    .navglyph{
+        color: #fff;
+        margin-top: -5px;
     }
 
     .dropdown-menu {
@@ -136,10 +126,4 @@ body {
         background-color: #F44336;
         color: #fff;
     }
-
-    .navglyph {
-        margin-top: -5px;
-    }
-
 }
-
