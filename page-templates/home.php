@@ -15,6 +15,7 @@
         <div class="panel panel-default">
             <div class="panel-body">
                 <?php the_content(); ?>
+                <hr>
             </div>
         </div>
     </div>
