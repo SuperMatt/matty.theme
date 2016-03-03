@@ -150,7 +150,7 @@ Now run the install:
 <code>mount -t glusterfs glu1:/volume1 /mnt/gluster -o backup-volfile-servers=glu2</code>
 <p>Alternatively, use this to ensure the mount command is the same on both servers</p>
 <code>mount -t glusterfs glu1,glu2:/volume1 /mnt/gluster</code>
-
+</div>
 
 
 
