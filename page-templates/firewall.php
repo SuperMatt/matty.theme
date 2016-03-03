@@ -278,7 +278,7 @@ $( document ).ready( function () {
 }
 </style>
 <div height="100%">
-    <h2>Firewall Rule Generator</h2>
+    <h1>Firewall Rule Generator</h1>
     <hr>
         <form class="form-horizontal">
             <div class="form-group">
