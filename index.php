@@ -39,7 +39,15 @@
 <?php
     endwhile;
     else:
-        _e('Sorry, no posts matched your criteria.');
+    <div class="row spacer">
+    <div class="col-md-9">
+        <div class="panel panel-default">
+            <div class="panel-body">
+                _e('Sorry, no posts matched your criteria.');
+            </div>
+        </div>
+    </div>
+    </div>
     endif;
 ?>
 </div>
