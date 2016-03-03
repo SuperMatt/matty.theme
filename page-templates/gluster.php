@@ -52,7 +52,7 @@ $(document).ready( function() {
 </script>
 
 
-<h2>How to install Gluster FS</h2>
+<h1>How to install Gluster FS</h1>
 <hr>
 <p><strong>Prerequisites</strong></p>
 <ul>
