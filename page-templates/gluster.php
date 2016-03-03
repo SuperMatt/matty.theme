@@ -5,7 +5,6 @@
     get_header();
 ?>
 
-<div class="container contentblock">
 <div class="row spacer">
 
     <div class="col-md-9">
