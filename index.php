@@ -11,7 +11,7 @@
     <div class="col-md-9">
         <div class="panel panel-default">
             <div class="panel-body">
-            <h1><a href="<?php get_permalink(); ?>"><?php the_title(); ?></h1>
+            <h1><a href="<?php get_permalink(); ?>"><?php the_title(); ?></a></h1>
             <p class="text-muted">Last updated: <?php the_date(); ?> - <?php the_time(); ?></p>
             <hr>
             <?php the_content(); ?>
