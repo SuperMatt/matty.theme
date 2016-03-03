@@ -13,7 +13,7 @@
     <div class="container-fluid">
       <div class="row topbar">
         <div class="col-sm-12 navigation">
-          <div class="hidden-sm hidden-xs">
+          <div class="hidden-xs">
             <span class="pull-left">
               <div class="title"><a href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a></div>
             </span>
@@ -21,7 +21,7 @@
               <?php wp_nav_menu( array( 'theme_location' => 'header-menu', 'menu_class' => 'list list-inline' ) ); ?>
             </span>
           </div>
-          <div class="hidden-md hidden-lg">
+          <div class="hidden-sm hidden-md hidden-lg">
             <div class="dropdown" id="dropdown-parent">
                 <button type="button" class="btn btn-link title" id="dropdownmenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     <span class="glyphicon glyphicon-menu-hamburger navglyph"></span>
