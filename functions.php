@@ -9,9 +9,10 @@ function register_my_menus() {
 
 add_action( 'init', 'register_my_menus');
 
-add_theme_support( 'post-thumbnails' );
+#add_theme_support( 'post-thumbnails' );
 
 add_image_size('4col', 400);
+add_image_size('feature_square', 64, 64, true);
 
 function jptweak_remove_share() {
     remove_filter( 'the_content', 'sharing_display',19 );

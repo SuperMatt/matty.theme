@@ -1,0 +1,350 @@
+<script>
+
+function showrichrule() {
+    firewallcmd = 'firewall-cmd --add-rich-rule="rule family=ipv4 source address="' + sourceip + '" ' + firewallcmdservice + ' ' + action + '" --permanent';
+    $(".firewallcmd").text(firewallcmd);
+
+
+    if (action=="accept" || !action) {
+        ufwaction = "allow";
+    } else if (action=="reject") {
+        ufwaction = action;
+    } else { ufwaction = "deny" }
+
+    ufw = 'ufw ' + ufwaction + ' from ' + sourceip + ' to any port ' + ufwservice;
+    $(".ufw").text(ufw);
+
+    iptablesaction = action.toUpperCase();
+    iptables = '-A INPUT -m tcp -p tcp -s ' + sourceip + ' --dport=' + iptablesservice + ' -j ' + iptablesaction;
+    $(".iptables").text(iptables);
+}
+
+function showsourceacceptrule() {
+    firewallcmd = 'firewall-cmd --add-source="' + sourceip + '"  --permanent';
+    $(".firewallcmd").text(firewallcmd);
+
+    ufwcmd = 'ufw allow from ' + sourceip;
+    $(".ufw").text(ufwcmd);
+
+    iptablescmd = '-A INPUT -m tcp -p tcp -s ' + sourceip + ' -j ACCEPT';
+    $(".iptables").text(iptablescmd);
+}
+
+function showportacceptrule() {
+    if (service == "custom") {
+        firewallcmdservice = "--add-port " + destinationport
+        ufwservice = destinationport
+        iptablesservice = destinationport
+    }
+    else if (service) {
+        firewallcmdservice = "--add-service " + service
+        ufwservice = service
+        iptablesservice = service
+    }
+
+    if (firewallcmdservice && ufwservice && iptablesservice) {
+        firewallcmd = 'firewall-cmd ' + firewallcmdservice + " --permanent";
+        $(".firewallcmd").text(firewallcmd);
+
+        ufwcmd = 'ufw allow ' + ufwservice;
+        $(".ufw").text(ufwcmd);
+
+        iptablescmd = '-A INPUT -m tcp -p tcp --dport ' + iptablesservice + ' -j ACCEPT';
+        $(".iptables").text(iptablescmd);
+    }
+    else {hidecommands()}
+}
+
+function hidecommands() {
+    $(".firewallcmd").text("Your rules will appear here when complete");
+    $(".ufw").text("");
+    $(".iptables").text("");
+}
+
+function showportdroprejectrule() {
+    if (action=="accept" || !action) {
+        ufwaction = "allow";
+    } else if (action=="reject") {
+        ufwaction = action;
+    } else { ufwaction = "deny" }
+
+    if (service=="custom") {
+        firewallcmdservice = "port port=" + destinationport + " protocol=tcp"
+        ufwservice = destinationport
+        iptablesservice = destinationport
+    }
+    else {
+        firewallcmdservice = "service name=" + service
+        ufwservice = service
+        iptablesservice = service
+    }
+    firewallcmd = 'firewall-cmd --add-rich-rule="rule family=ipv4 ' + firewallcmdservice + ' ' + action + '" --permanent'
+    $(".firewallcmd").text(firewallcmd);
+
+    ufwcmd = 'ufw ' + ufwaction + ' ' + ufwservice;
+    $(".ufw").text(ufwcmd);
+
+    iptablesaction = action.toUpperCase();
+    iptables = '-A INPUT -m tcp -p tcp --dport=' + iptablesservice + ' -j ' + iptablesaction;
+    $(".iptables").text(iptables);
+
+}
+
+function showsourcedroprejectrule() {
+    if (action=="accept" || !action) {
+        ufwaction = "allow";
+    } else if (action=="reject") {
+        ufwaction = action;
+    } else { ufwaction = "deny" }
+
+    firewallcmd = 'firewall-cmd --add-rich-rule="rule family=ipv4 source address=' + sourceip + ' ' + action + '" --permanent'
+    $(".firewallcmd").text(firewallcmd);
+
+    ufwcmd = 'ufw ' + ufwaction + ' ' + sourceip;
+    $(".ufw").text(ufwcmd);
+
+    iptablesaction = action.toUpperCase();
+    iptables = '-A INPUT -m tcp -p tcp -s=' + sourceip + ' -j ' + iptablesaction;
+    $(".iptables").text(iptables);
+
+}
+
+function analyse() {
+
+    if (sourceip && service !="any") {
+        if (service == "custom") {
+            if(destinationport) {
+	            firewallcmdservice = 'port port="' + destinationport + '" protocol=tcp';
+	            ufwservice = destinationport;
+	            iptablesservice = destinationport;
+                showrichrule()
+            } else {
+                hidecommands()
+            }
+
+        } else {
+	        firewallcmdservice = 'service name="' + service + '"';
+	        ufwservice = service
+	        iptablesservice=service
+            showrichrule();
+        }
+
+    }
+
+    else if( sourceip && service=="any") {
+        if (action=="accept" || !action) {
+            showsourceacceptrule()
+        }
+        else if(action=="reject" || action=="drop") {
+            showsourcedroprejectrule()
+        }
+        else {
+            hidecommands();
+        }
+
+    }
+
+    else if (service !="any" && !sourceip) {
+        if (action=="accept" || !action) {
+            showportacceptrule()
+        }
+        else if(action=="reject" || action=="drop") {
+            showportdroprejectrule()
+        }
+        else {
+            hidecommands();
+        }
+    }
+    else {
+        hidecommands();
+    }
+}
+
+
+function setports(type) {
+    if (type=='numeric') {
+        $(".ftp").text("21");
+        $(".ssh").text("22");
+        $(".smtp").text("25");
+        $(".dns").text("53");
+        $(".http").text("80");
+        $(".pop3").text("110");
+        $(".ntp").text("123");
+        $(".imap").text("143");
+        $(".https").text("443");
+        $(".submission").text("587");
+        $(".imaps").text("993");
+        $(".pop3s").text("995");
+        $(".mysql").text("3306");
+        $(".plesk").text("8443");
+        $(".webmin").text("1000");
+    }
+    else {
+        $(".ftp").text("ftp");
+        $(".ssh").text("ssh");
+        $(".smtp").text("smtp");
+        $(".dns").text("dns");
+        $(".http").text("http");
+        $(".pop3").text("pop3");
+        $(".ntp").text("ntp");
+        $(".imap").text("imap");
+        $(".https").text("https");
+        $(".submission").text("smtp submission");
+        $(".imaps").text("imaps");
+        $(".pop3s").text("pop3s");
+        $(".mysql").text("mysql");
+        $(".plesk").text("plesk");
+        $(".webmin").text("webmin");
+
+    }
+}
+$( document ).ready( function () {
+
+    $(".numeric").change( function(){
+        if($(".numeric").is(":checked")) {
+            setports('numeric');
+
+        }
+        else {
+            setports('text');
+        }
+    });
+
+    setports('text')
+	$(".customport").hide();
+	$(".errors").hide();
+
+    $(".target").change( function() {
+        errorflag = 0;
+        sourceip = $("#sourceip").val()
+        destinationport = $("#destinationport").val()
+        action = $("#action").val()
+	    service = $("#service").val()
+
+//        if (sourceip) {
+//
+//            if (!/^(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$/.test(sourceip)) {
+//                errorflag = 1;
+//            }
+//        }
+
+//        if (service=="custom" && destinationport) {
+//            if (isNaN(destinationport))
+//                errorflag = 1;
+//            }
+//        }
+
+
+
+	    if (service == "custom") {
+		    $(".customport").show();
+	    } else {
+		    $(".customport").hide();
+	    }
+
+        if (errorflag) {
+            $(".errors").show();
+            hidecommands();
+        } else {
+            $(".errors").hide();
+            analyse()
+        }
+    });
+});
+
+</script>
+
+<style>
+.output {
+    padding-top: 20px;
+}
+
+.paddright {
+    padding-right: 10px;
+}
+</style>
+<div height="100%">
+    <h1>Firewall Rule Generator</h1>
+    <hr>
+        <form class="form-horizontal">
+            <div class="form-group">
+                <label for="sourceip" class="col-sm-2 control-label">Source IP</label>
+                <div class="col-sm-10">
+                    <input type="text" id="sourceip" placeholder="source ip" name="sourceip" class="form-control target">
+                    </input>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="destinationport" class="col-sm-2 control-label">Destination Port</label>
+                <div class="col-sm-10">
+                    <select class="form-control target" name="service" id="service">
+                        <option value="any">any</option>
+			            <option class="ftp" value="ftp">ftp</option>
+                        <option class="ssh" value="ssh">ssh</option>
+                        <option class="smtp" value="smtp">smtp</option>
+                        <option class="dns" value="dns">dns</option>
+                        <option class="http" value="http">http</option>
+                        <option class="pop3" value="pop3">pop3</option>
+                        <option class="ntp" value="ntp">ntp</option>
+                        <option class="imap" value="imap">imap</option>
+                        <option class="https" value="https">https</option>
+                        <option class="submission" value="submission">smtp submission</option>
+                        <option class="imaps" value="imaps">imaps</option>
+                        <option class="pop3s" value="pop3s">pop3s</option>
+                        <option class="mysql" value="mysql">mysql</option>
+                        <option class="plesk" value="plesk">8443</option>
+                        <option class="webmin" value="webmin">webmin</option>
+
+            			<option>custom</option>
+                    </select>
+                    <input type="text" id="destinationport" placeholder="destination port" name="destinationport" class="form-control target customport">
+                    </input>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="numeric" class="col-sm-2 control-label">Numeric port numbers</label>
+                <div class="col-sm-10">
+                    <div class="checkbox"><input type="checkbox" name="numeric" value="numeric" class="numeric"></input></div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="action" class="col-sm-2 control-label">Action</label>
+                <div class="col-sm-10">
+                    <select class="form-control target" name="action" id="action">
+                        <option>accept</option>
+                        <option>drop</option>
+                        <option>reject</option>
+                    </select>
+                </div>
+            </div>
+<!--            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                    <button type="submit" class="btn btn-primary" id="submit">Submit</button>
+                </div>
+            </div> -->
+        </form>
+    </div>
+
+    <div class="row output">
+        <form class="form-horizontal">
+            <div class="form-group">
+                <label for="firewallcmd" class="col-sm-2 control-label">firewall-cmd</label>
+                <div class="col-sm-10">
+                    <p class="form-control-static firewallcmd">Your rules will appear here when complete</p>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="ufw" class="col-sm-2 control-label">ufw</label>
+                <div class="col-sm-10">
+                    <p class="form-control-static ufw"></p>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="iptables" class="col-sm-2 control-label">iptables</label>
+                <div class="col-sm-10">
+                    <p class="form-control-static iptables"></p>
+                </div>
+            </div>
+        </form>
+</div>
+
