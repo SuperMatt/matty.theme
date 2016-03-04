@@ -8,7 +8,7 @@
     if ( have_posts() ) : while ( have_posts() ) : the_post();
     ?>
     <div class="row spacer">
-    <div class="col-sm-1 hidden-sm hidden-md hidden-lg">
+    <div class="col-sm-1 hidden-md hidden-lg">
         <?php
             if ( function_exists( 'sharing_display' ) ) {
                 sharing_display( '', true );
@@ -38,7 +38,7 @@
             </div>
         </div>
     </div>
-    <div class="col-sm-1 col-md-1 col-lg-1 hidden-xs">
+    <div class="col-sm-1 col-md-1 col-lg-1 hidden-xs hidden-sm">
         <?php
             if ( function_exists( 'sharing_display' ) ) {
                 sharing_display( '', true );
