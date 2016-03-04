@@ -15,7 +15,7 @@
             }
         ?>
     </div>
-    <div class="col-sm-8 col-sm-offset-2">
+    <div class="col-sm-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
         <div class="panel panel-default">
             <div class="panel-body">
                 <h1 class="media-heading"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
@@ -38,7 +38,7 @@
             </div>
         </div>
     </div>
-    <div class="col-sm-1 hidden-xs">
+    <div class="col-sm-1 col-md-1 col-lg-1 hidden-xs">
         <?php
             if ( function_exists( 'sharing_display' ) ) {
                 sharing_display( '', true );
@@ -55,7 +55,7 @@
     else:
     ?>
     <div class="row spacer">
-    <div class="col-sm-12">
+    <div class="col-sm-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
         <div class="panel panel-default">
             <div class="panel-body">
                 <?php _e('Sorry, no posts matched your criteria.'); ?>
