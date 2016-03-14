@@ -1,7 +1,6 @@
 
 </body>
-</html>
-
+<footer>
 <script>
     $( document ).ready(function() {
         $('#dropdown-parent').on('show.bs.dropdown', function() {
@@ -13,3 +12,9 @@
         });
     });
 </script>
+
+<?php wp_footer(); ?>
+</footer>
+</html>
+
+
