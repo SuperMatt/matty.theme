@@ -1,6 +1,5 @@
 <?php
     get_header();
-    wp_head();
 ?>
 
 <div class="container contentblock">
