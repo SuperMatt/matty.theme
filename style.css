@@ -31,6 +31,9 @@ body {
 
 .shareblock {
     float: left;
+}
+
+.shareicon {
     box-shadow: 0px 3px 5px #555;
 }
 
