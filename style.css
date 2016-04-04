@@ -33,7 +33,7 @@ body {
     float: left;
 }
 
-.sd-sharing li {
+.share-email, .share-facebook, .share-reddit, .share-twitter, .share-tumblr {
     box-shadow: 0px 3px 5px #555;
 }
 
