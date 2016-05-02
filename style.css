@@ -51,6 +51,7 @@ h1 a:hover {
 
     .navigation li:hover {
         background-color: #FAFAFA;
+        color: #D50000;
     }
 
     .navigation li a {
