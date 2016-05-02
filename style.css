@@ -49,7 +49,7 @@ h1 a:hover {
 @media (min-width: 768px) {
 
     li.current-menu-item {
-        background-color: #EEE;
+        background-color: #FAFAFA;
     }
 
     .navigation li:hover {
