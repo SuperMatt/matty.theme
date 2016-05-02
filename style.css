@@ -8,7 +8,7 @@ body {
 }
 
 .topbar {
-    background-color: #F44336;
+    background-color: #D50000;
     color: #fff;
     box-shadow: 0px 3px 5px #555;
 }
@@ -49,6 +49,7 @@ h1 a:hover {
 @media (min-width: 768px) {
 
     li.current-menu-item {
+        background-color: #FFF;
         background-color: #D50000;
     }
 
