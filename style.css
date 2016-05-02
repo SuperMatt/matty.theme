@@ -50,12 +50,12 @@ h1 a:hover {
     }
 
     .navigation li:hover {
-        background-color: #ff5252;
+        background-color: #FAFAFA;
     }
 
     .navigation li a {
         padding-top: 20px;
-        color: #fff;
+        color: #D50000;
         padding-bottom: 20px;
     }
     .navigation li a:hover {
