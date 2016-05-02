@@ -48,7 +48,7 @@ h1 a:hover {
 
 @media (min-width: 768px) {
 
-    li.current-menu-item {
+    li.current-menu-item, li.current-menu-item a {
         background-color: #FFF;
         color: #D50000;
     }
