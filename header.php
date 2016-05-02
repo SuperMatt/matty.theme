@@ -12,8 +12,7 @@
   </head>
   <body>
     <div class="container-fluid">
-      <div class="container">
-      <div class="row topbar">
+      <div class="container row topbar">
         <div class="col-sm-12 navigation">
           <div class="hidden-xs">
             <span class="pull-left">
@@ -33,6 +32,5 @@
             <div class="title"><a href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a></div>
           </div>
         </div>
-      </div>
       </div>
     </div>
