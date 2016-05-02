@@ -69,6 +69,10 @@ h1 a:hover {
         color: #D50000;
     }
 
+    li.current-menu-item a:hover {
+        color: #FFF;
+    }
+
 }
 
 @media (min-width: 992px) {
