@@ -15,26 +15,24 @@
         ?>
     </div>
     <div class="col-sm-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
-        <div class="panel panel-default">
-            <div class="panel-body">
-                <h1 class="media-heading"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
-                <span class="text-muted">Last updated: <?php the_date(); ?> - <?php the_time(); ?></span>
-                <hr>
-                <?php
-                $pagename = get_query_var('pagename');
-                if ($pagename == "firewall" || $pagename == "gluster")
-                {
-                    $filename = get_template_directory() . "/page-files/" . $pagename . ".html";
-                    echo file_get_contents($filename);
-                }
+        <div class="panel-main">
+            <h1 class="media-heading"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
+            <span class="text-muted">Last updated: <?php the_date(); ?> - <?php the_time(); ?></span>
+            <hr>
+            <?php
+            $pagename = get_query_var('pagename');
+            if ($pagename == "firewall" || $pagename == "gluster")
+            {
+                $filename = get_template_directory() . "/page-files/" . $pagename . ".html";
+                echo file_get_contents($filename);
+            }
 
-                else {
+            else {
 
-                    the_content();
-                }
-                ?>
-                <hr>
-            </div>
+                the_content();
+            }
+            ?>
+            <hr>
         </div>
     </div>
     <div class="col-sm-1 col-md-1 col-lg-1 hidden-xs hidden-sm">
