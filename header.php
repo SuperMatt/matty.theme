@@ -2,7 +2,7 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://code.jquery.com/jquery-1.12.1.min.js"></script>
-    <link href='https://fonts.googleapis.com/css?family=Raleway:400,500|Open+Sans|Comfortaa' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Raleway:400,500|Open+Sans' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
     <title><?php bloginfo('name'); ?></title>
@@ -14,7 +14,7 @@
     <div class="container-fluid">
       <div class="row topbar">
         <div class="container">
-        <div class="col-sm-12 navigation">
+        <div class="col-sm-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2 navigation">
           <div class="hidden-xs">
             <span class="pull-left">
               <div class="title"><a href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a></div>

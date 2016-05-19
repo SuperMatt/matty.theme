@@ -3,8 +3,8 @@ html {
 }
 
 body {
-    font-family: Raleway;
-    background-color: #EEE;
+    font-family: "Open Sans";
+    background: #F5F5F5;
     height: 100%;
 }
 
@@ -15,17 +15,20 @@ body {
     border-radius: 3px;
     padding: 15px;
     min-height: 50%;
+    margin-left: 15px;
+    margin-right: 15px;
 }
 
 .topbar {
-    background-color: #D50000;
+    background: #D50000;
+    background: linear-gradient(#D50000, #B71c1c);
     color: #fff;
     box-shadow: 0px 0px 10px #BDBDBD;
     margin-bottom: 15px;
 }
 
 .title {
-    font-family: comfortaa;
+    font-family: Raleway;
 }
 
 .title a {
@@ -64,39 +67,40 @@ h1 a:hover {
     }
 
     li.current-menu-item {
-        background-color: #FAFAFA;
+        background: #eceff1;
     }
 
     .navigation li:hover {
-        background-color: #FAFAFA;
+        background: #eceff1;
     }
 
     .navigation li a {
         padding-top: 20px;
-        color: #FAFAFA;
+        color: #E0E0E0;
         padding-bottom: 20px;
     }
 
     li.current-menu-item a {
-        color: #D50000;
+        color: #37474f;
     }
 
     li.current-menu-item a:hover {
-        color: #D50000;
+        color: #37474f;
     }
 
      .navigation li a:hover {
-        color: #D50000;
+        color: #37474f;
         text-decoration: none;
     }
 
     .navigation li:hover a {
-        color: #D50000;
+        color: #37474f;
         text-decoration: none;
     }
 
 }
 
+/*
 @media (min-width: 992px) {
     .topbar {
         min-height: 60px;
@@ -133,8 +137,9 @@ h1 a:hover {
     }
 
 }
+*/
 
-@media (max-width: 991px) {
+@media (min-width: 768px) {
 
 
     .topbar {
