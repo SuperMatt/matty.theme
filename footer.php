@@ -8,7 +8,16 @@
                         <div class="link-btn"><?php next_post_link('%link', 'Next: %title'); ?></div>
                     </div>
                 </div>
-<?php endif; ?>
+<?php else: ?>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="link-btn"><?php previous_posts_link('%link', 'Previous: %title'); ?></div>
+                    </div>
+                    <div class="col-sm-4 col-sm-offset-4">
+                        <div class="link-btn"><?php next_posts_link('%link', 'Next: %title'); ?></div>
+                    </div>
+                </div>
+<?php endif ?>
             </div>
         </div>
         <?php wp_footer(); ?>
