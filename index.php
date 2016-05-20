@@ -39,6 +39,7 @@ if ( have_posts() ) : while ( have_posts() ) : the_post();
         if ($postCount != sizeof($posts)) {
             ?><div class="post-spacer">&nbsp;</div><?php
         }
+        $postCount++;
     endwhile;
     else:
 ?>
