@@ -8,7 +8,7 @@
                         <div class="link-btn"><?php next_post_link('%link', 'Next: %title'); ?></div>
                     </div>
                 </div>
-<?php } ?>
+<?php endif ?>
             </div>
         </div>
         <?php wp_footer(); ?>
