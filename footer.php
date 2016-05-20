@@ -1,4 +1,4 @@
-<? if (is_single()) { ?>
+<? if (is_single()) : ?>
 
                 <div class="row">
                     <div class="col-sm-4">
