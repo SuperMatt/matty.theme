@@ -11,10 +11,10 @@
 <?php else: ?>
                 <div class="row">
                     <div class="col-sm-4">
-                        <div class="link-btn"><?php previous_posts_link('Previous Page'); ?></div>
+                        <div class="link-btn"><?php previous_posts_link('Newer'); ?></div>
                     </div>
                     <div class="col-sm-4 col-sm-offset-4">
-                        <div class="link-btn"><?php next_posts_link('Next Page'); ?></div>
+                        <div class="link-btn"><?php next_posts_link('Older'); ?></div>
                     </div>
                 </div>
 <?php endif ?>
