@@ -61,7 +61,7 @@ h1,h2,h3,h4,h5,h6 {
 
 .post-spacer {
     margin-top: 60px;
-    height: 10px;
-    background: linear-gradient(#fafafa, #bdbdbd);
+    height:1px;
     margin-bottom: 30px;
+    border-bottom: 1px solid #bdbdbd;
 }
