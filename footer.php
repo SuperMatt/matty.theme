@@ -1,4 +1,4 @@
-<? if (is_single()) : ?>
+<?php if (is_single()): ?>
 
                 <div class="row">
                     <div class="col-sm-4">
@@ -8,7 +8,7 @@
                         <div class="link-btn"><?php next_post_link('%link', 'Next: %title'); ?></div>
                     </div>
                 </div>
-<?php endif ?>
+<?php endif; ?>
             </div>
         </div>
         <?php wp_footer(); ?>
