@@ -57,11 +57,11 @@ h1,h2,h3,h4,h5,h6 {
 
 .post {
     margin-top: 15px;
-    margin-bottom: 30px;
-    border-bottom: 1px solid #bdbdbd;
-    padding-bottom: 60px;
 }
 
-row .post:last-of-type {
-    border-bottom: none
+.post-spacer {
+    margin-top: 60px;
+    height: 10px;
+    background: linear-gradient(#fafafa, #bdbdbd);
+    margin-bottom: 30px;
 }

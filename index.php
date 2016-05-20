@@ -3,6 +3,7 @@
 ?>
 
 <?php
+$postCount = 1;
 if ( have_posts() ) : while ( have_posts() ) : the_post();
 ?>
 
@@ -35,6 +36,9 @@ if ( have_posts() ) : while ( have_posts() ) : the_post();
 </div>
 
 <?php
+        if ($postCount != sizeof($posts)) {
+            ?><div class="post-spacer">&nbsp;</div><?php
+        }
     endwhile;
     else:
 ?>
