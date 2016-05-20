@@ -66,6 +66,11 @@ h1,h2,h3,h4,h5,h6 {
     border-bottom: 1px solid #bdbdbd;
 }
 
+.post-end {
+    margin-top: 60px;
+    height:1px;
+}
+
 .post-details h1 a{
     font-weight: 400;
     color: #b71c1c;
