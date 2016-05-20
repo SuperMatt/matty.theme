@@ -58,6 +58,6 @@ h1,h2,h3,h4,h5,h6 {
 .post {
     margin-top: 15px;
     margin-bottom: 30px;
-    border-bottom: 3px solid #fafafa;
+    border-bottom: 1px solid #bdbdbd;
     padding-bottom: 30px;
 }
