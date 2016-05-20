@@ -40,7 +40,7 @@ if ( have_posts() ) : while ( have_posts() ) : the_post();
             ?><div class="post-spacer">&nbsp;</div><?php
         }
         else {
-            <div class="post-end">&nbsp;</div><?php
+            ?><div class="post-end">&nbsp;</div><?php
         }
         $postCount++;
     endwhile;
