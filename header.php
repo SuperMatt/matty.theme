@@ -33,6 +33,10 @@ body {
     padding-top: 8px;
     font-weight: 400;
 }
+
+.head a, .navi a {
+    color: #fafafa;
+}
 </style>
     </head>
     <body>
