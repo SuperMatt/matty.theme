@@ -2,6 +2,38 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title><?php bloginfo('name'); ?></title>
+
+
+<style>
+body {
+    background-color: #fafafa;
+    font-family: Roboto;
+    font-weight: 300;
+    font-size: 11pt;
+}
+
+.main {
+    min-height: 100%;
+    background-color: #ffffff;
+}
+
+.head {
+    font-family: "Roboto";
+    font-weight: 100;
+    background-color: #d32f2f;
+    /* background: linear-gradient(#d32f2f, #b71c1c); */
+    color: #fafafa;
+    font-size: 33pt;
+}
+
+.navi {
+    position:relative;
+    background-color: #ff6f00;
+    color: #fafafa;
+    padding-top: 8px;
+    font-weight: 400;
+}
+</style>
     </head>
     <body>
         <div class="container">
