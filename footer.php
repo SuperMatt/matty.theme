@@ -20,7 +20,8 @@
 <?php endif ?>
             </div>
         </div>
-        <?php wp_head(); ?>
-        <?php wp_footer(); ?>
     </body>
+<link href='https://fonts.googleapis.com/css?family=Roboto:100,300,400' rel='stylesheet' type='text/css'>
+<?php wp_head(); ?>
+<?php wp_footer(); ?>
 </html>
