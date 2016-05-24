@@ -40,7 +40,6 @@ if ( have_posts() ) : while ( have_posts() ) : the_post();
 <div class="row">
     <div class="col-xs-12 post-commentnumber">
         <a class="commentnumber" href="<?php echo get_permalink(); ?>#disqus_thread" data-disqus-identifier="<?php echo get_the_ID(); ?> <?php echo home_url(); ?>/?p=<?php echo get_the_ID(); ?>">0 Comments</a>
-        <!-- data-disqus-identifier="<?php echo get_post_meta(get_the_ID(), 'dsq_thread_id', true); ?>" -->
     </div>
 </div>
 
