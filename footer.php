@@ -1,4 +1,10 @@
-<?php if (is_single()): ?>
+<?php
+
+if ( comments_open() || get_comments_number() ) :
+    comments_template();
+endif;
+
+if (is_single()): ?>
 
                 <div class="row">
                     <div class="col-sm-4">
@@ -17,7 +23,8 @@
                         <div class="link-btn"><?php next_posts_link('Older'); ?></div>
                     </div>
                 </div>
-<?php endif ?>
+<?php endif; ?>
+
             </div>
         </div>
     </body>
