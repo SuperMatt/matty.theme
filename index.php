@@ -35,7 +35,7 @@ if ( have_posts() ) : while ( have_posts() ) : the_post();
     </div>
 </div>
 
-<?php if (!is_single()) { ?>
+<?php if (!is_single()): ?>
 <div class="row">
     <div class="col-xs-12 post-commentnumber">
         <a href="<?php the_permalink(); ?>" class="commentnumber">Comments</a>
