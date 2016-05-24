@@ -35,4 +35,7 @@ if (is_single()): ?>
 <link rel='stylesheet' href="<?php echo get_template_directory_uri(); ?>/style.css">
 <?php wp_head(); ?>
 <?php wp_footer(); ?>
+<script>
+DISQUSWIDGETS.getCount({reset: true});
+</script>
 </html>
