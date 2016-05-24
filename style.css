@@ -60,9 +60,9 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .post-spacer {
-    margin-top: 60px;
+    margin-top: 30px;
     height:1px;
-    margin-bottom: 60px;
+    margin-bottom: 30px;
     border-bottom: 1px solid #bdbdbd;
 }
 
@@ -96,6 +96,18 @@ h1,h2,h3,h4,h5,h6 {
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
+}
+
+.post-commentnumber {
+    padding-top: 30px;
+}
+
+.commentnumber {
+    color: #ff6f00;
+}
+
+.commentnumber:hover {
+    color: #ff6f00;
 }
 
 
