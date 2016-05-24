@@ -38,7 +38,7 @@ if ( have_posts() ) : while ( have_posts() ) : the_post();
 <?php if (!is_single()): ?>
 <div class="row">
     <div class="col-xs-12 post-commentnumber">
-        <a class="commentnumber" href="<?php echo get_permalink(); ?>#disqus_thread">Comments</a>
+        <a class="commentnumber" href="<?php echo get_permalink(); ?>#disqus_thread">Permalink</a>
     </div>
 </div>
 <?php endif; ?>
