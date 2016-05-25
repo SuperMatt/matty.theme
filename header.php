@@ -33,6 +33,7 @@
         }
         </script>
     </head>
+    <?php wp_head(); ?>
     <body>
         <div class="main shadow-light">
             <div class="head">
