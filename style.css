@@ -181,7 +181,7 @@ code, pre {
 }
 pre {
     padding: 15px;
-    overflow-x: scroll;
+    overflow-x: auto;
 }
 
 .img-responsive {
