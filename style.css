@@ -3,6 +3,14 @@ html, body {
     margin: 0px;
 }
 
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
 body {
     background-color: #fafafa;
     font-family: Roboto;
