@@ -9,6 +9,27 @@ function register_my_menus() {
 
 add_action( 'init', 'register_my_menus');
 
+
+
+function jeherve_custom_image( $media, $post_id, $args ) {
+    if ( $media ) {
+        return $media;
+    } else {
+        $permalink = get_permalink( $post_id );
+        $url = apply_filters( 'jetpack_photon_url', 'https://matty.digital/wp-content/uploads/2016/02/IMG_20140308_164816-1.jpg' );
+
+        return array( array(
+            'type'  => 'image',
+            'from'  => 'custom_fallback',
+            'src'   => esc_url( $url ),
+            'href'  => $permalink,
+        ) );
+    }
+}
+add_filter( 'jetpack_images_get_images', 'jeherve_custom_image', 10, 3 );
+
+
+
 #add_theme_support( 'post-thumbnails' );
 
 add_image_size('4col', 400);
