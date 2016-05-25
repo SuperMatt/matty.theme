@@ -5,6 +5,7 @@
         <meta property="og:url" content="https://matty.digital/">
         <meta property="og:type" content="website">
         <meta property="og:title" content="Matthew Ames (matty.digital)">
+        <meta property="fb:app_id" content="363735137130472">
         <title><?php bloginfo('name'); ?></title>
         <link rel='stylesheet' href="<?php echo get_template_directory_uri(); ?>/style.css">
         <script type="application/ld+json">
