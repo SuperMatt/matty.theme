@@ -1,11 +1,11 @@
 <html>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta property="fb:app_id" content="363735137130472">
         <!-- <meta property="og:image" content="https://matty.digital/wp-content/uploads/2016/02/IMG_20140308_164816-1.jpg">
         <meta property="og:url" content="<?php the_permalink(); ?>">
         <meta property="og:type" content="website">
         <meta property="og:title" content="Matthew Ames (matty.digital)">
-        <meta property="fb:app_id" content="363735137130472">
 
         <?php
         if (!is_single()) {
