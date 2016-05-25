@@ -24,6 +24,7 @@ body {
     font-size: 33pt;
     padding-left: 15px;
     padding-right: 15px;
+    padding-top: 7.5px;
 }
 
 .head a {
@@ -149,6 +150,7 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
     padding-bottom: 7.5px;
     padding-left: 15px;
     padding-right: 15px;
+    line-height: 22pt;
 }
 
 .list-inline li{
