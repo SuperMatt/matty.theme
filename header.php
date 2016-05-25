@@ -6,6 +6,14 @@
         <meta property="og:type" content="website">
         <meta property="og:title" content="Matthew Ames (matty.digital)">
         <meta property="fb:app_id" content="363735137130472">
+
+        <?php
+        query_posts('posts_per_page=1');
+        if ( have_posts() ) : while ( have_posts() ) : the_post();
+                ?><meta property="og:description" content="<?php echo htmlspecialchars(get_the_content()); ?>"><?php
+            endwhile;
+        endif;
+        ?>
         <title><?php bloginfo('name'); ?></title>
         <link rel='stylesheet' href="<?php echo get_template_directory_uri(); ?>/style.css">
         <script type="application/ld+json">
