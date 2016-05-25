@@ -10,6 +10,6 @@
             <div class="head">
                 <a href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a>
             </div>
-            <div class="col-xs-12 navi">
+            <div class="navi">
                 <?php wp_nav_menu( array( 'theme_location' => 'header-menu', 'menu_class' => 'list list-inline' ) ); ?>
             </div>
