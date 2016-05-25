@@ -32,8 +32,8 @@
           "url": "https://matty.digital"
         }
         </script>
+        <?php wp_head(); ?>
     </head>
-    <?php wp_head(); ?>
     <body>
         <div class="main shadow-light">
             <div class="head">
