@@ -176,6 +176,9 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
 
 code, pre {
     font-family: "Roboto Mono", mono;
+    padding: 15px;
+    background-color: #fafafa;
+
 }
 
 @media(min-width: 992px) {
