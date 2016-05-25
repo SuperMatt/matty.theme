@@ -1,6 +1,7 @@
 <html>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta property="og:image" content="https://matty.digital/wp-content/uploads/2016/02/IMG_20140308_164816-1.jpg">
         <title><?php bloginfo('name'); ?></title>
         <link rel='stylesheet' href="<?php echo get_template_directory_uri(); ?>/style.css">
         <script type="application/ld+json">
