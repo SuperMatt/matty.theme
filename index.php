@@ -50,7 +50,7 @@ if ( have_posts() ) : while ( have_posts() ) : the_post();
 
 <?php
         if ($postcount == 0) {
-            ?><meta property="og:description" content="<?php get_the_content(); ?>"><?php
+            ?><meta property="og:description" content="<?php echo get_the_content(); ?>"><?php
         }
         else if ($postCount != sizeof($posts)) {
             ?><div class="post-spacer">&nbsp;</div><?php
