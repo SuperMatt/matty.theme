@@ -8,7 +8,7 @@
         <meta property="fb:app_id" content="363735137130472">
 
         <?php
-        if (!$_single) {
+        if (!is_single()) {
             query_posts('posts_per_page=1');
         }
         if ( have_posts() ) : while ( have_posts() ) : the_post();
