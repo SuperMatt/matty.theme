@@ -183,6 +183,7 @@ pre {
     border-bottom: 2px solid #ff6f00;
     padding: 7.5px;
     font-weight: 400;
+    text-align: left;
 }
 
 .table tr td {
