@@ -177,10 +177,15 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
 code, pre {
     font-family: "Roboto Mono", mono;
     font-weight: 100;
+    background-color: #fafafa;
 }
 pre {
     padding: 15px;
-    background-color: #fafafa;
+    overflow-x: scroll;
+}
+
+.img-responsive {
+    max-width: 100%;
 }
 
 @media(min-width: 992px) {
