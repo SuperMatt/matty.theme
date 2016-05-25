@@ -1,7 +1,9 @@
 <html>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title><?php bloginfo('name'); ?></title>
+        <title><?php bloginfo('name'); ?></title>c
+        <link rel='stylesheet' href="<?php echo get_template_directory_uri(); ?>/style.css">
+        <link href='https://fonts.googleapis.com/css?family=Roboto:100,300,400' rel='stylesheet' type='text/css'>
     </head>
     <body>
         <div class="main shadow-light">
