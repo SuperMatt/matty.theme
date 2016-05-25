@@ -13,6 +13,7 @@
                 ?><meta property="og:description" content="<?php echo htmlspecialchars(get_the_content()); ?>"><?php
             endwhile;
         endif;
+        wp_reset_query();
         ?>
         <title><?php bloginfo('name'); ?></title>
         <link rel='stylesheet' href="<?php echo get_template_directory_uri(); ?>/style.css">
