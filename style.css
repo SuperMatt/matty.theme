@@ -166,6 +166,11 @@ pre {
     overflow-x: auto;
 }
 
+code {
+    padding-left: 7.5px;
+    padding-right: 7.5px;
+}
+
 .img-responsive {
     max-width: 100%;
 }
