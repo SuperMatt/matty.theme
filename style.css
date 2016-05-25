@@ -87,7 +87,7 @@ h1,h2,h3,h4,h5,h6 {
     margin-top: 30px;
     height:1px;
     margin-bottom: 30px;
-    border-bottom: 1px solid #bdbdbd;
+    border-bottom: 1px solid #ff6f00;
 }
 
 .post-end {
@@ -101,7 +101,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .comments {
-    border-top: 1px solid #bdbdbd;
+    border-top: 1px solid #ff6f00;
     padding-top: 15px;
     margin-left: 15px;
     margin-right: 15px;
