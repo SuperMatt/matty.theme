@@ -170,6 +170,12 @@ pre {
     max-width: 100%;
 }
 
+.table {
+    width: 100%;
+    font-family: Roboto;
+    font-weight: 300;
+}
+
 @media(min-width: 992px) {
     .main {
         max-width: 970px;
