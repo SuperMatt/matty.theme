@@ -176,6 +176,10 @@ pre {
     font-weight: 300;
 }
 
+.thead {
+    border-bottom: 1px solid #bdbdbd;
+}
+
 @media(min-width: 992px) {
     .main {
         max-width: 970px;
