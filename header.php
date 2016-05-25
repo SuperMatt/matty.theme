@@ -8,7 +8,9 @@
         <meta property="fb:app_id" content="363735137130472">
 
         <?php
-        query_posts('posts_per_page=1');
+        if (!$_single) {
+            query_posts('posts_per_page=1');
+        }
         if ( have_posts() ) : while ( have_posts() ) : the_post();
                 ?><meta property="og:description" content="<?php echo htmlspecialchars(get_the_content()); ?>"><?php
             endwhile;
