@@ -169,6 +169,7 @@ pre {
 code {
     padding-left: 7.5px;
     padding-right: 7.5px;
+    border-radius: 3px;
 }
 
 .img-responsive {
