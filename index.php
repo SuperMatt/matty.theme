@@ -7,40 +7,43 @@ $postCount = 1;
 if ( have_posts() ) : while ( have_posts() ) : the_post();
 ?>
 
-<div class="row">
-    <div class="col-xs-12 post-details">
-        <h1>
-            <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-        </h1>
-        <p class="highlight">
-            <?php the_author();?> - <?php the_date(); ?> - <?php the_time(); ?>
-        </p>
-    </div>
+<div class="post-details">
+    <h1>
+        <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+    </h1>
+    <p class="highlight">
+        <?php the_author();?> - <?php the_date(); ?> - <?php the_time(); ?>
+    </p>
 </div>
-<div class="row">
-    <div class="col-xs-12 post">
-        <?php
-            $pagename = get_query_var('pagename');
-            if ($pagename == "firewall" || $pagename == "gluster")
-            {
-                $filename = get_template_directory() . "/page-files/" . $pagename . ".html";
-                echo file_get_contents($filename);
-            }
+<div class="post">
+    <?php
+        $pagename = get_query_var('pagename');
+        if ($pagename == "firewall" || $pagename == "gluster")
+        {
+            $filename = get_template_directory() . "/page-files/" . $pagename . ".html";
+            echo file_get_contents($filename);
+        }
 
-            else {
+        else {
 
-                the_content();
-            }
-        ?>
-    </div>
+            the_content();
+        }
+    ?>
 </div>
 
 <?php if (!is_single()): ?>
 
-<div class="row">
-    <div class="col-xs-12 post-commentnumber">
-        <a class="commentnumber" href="<?php echo get_permalink(); ?>#disqus_thread" data-disqus-identifier="<?php echo get_the_ID(); ?> <?php echo home_url(); ?>/?p=<?php echo get_the_ID(); ?>">0 Comments</a>
-    </div>
+<div class="post-commentnumber">
+    <a class="commentnumber" href="<?php echo get_permalink(); ?>#disqus_thread" data-disqus-identifier="<?php echo get_the_ID(); ?> <?php echo home_url(); ?>/?p=<?php echo get_the_ID(); ?>">0 Comments</a>
+</div>
+
+<?php else: ?>
+<div class="comments">
+<?php
+    if ( comments_open() || get_comments_number() ) :
+        comments_template();
+    endif;
+?>
 </div>
 
 <?php endif; ?>
@@ -56,11 +59,9 @@ if ( have_posts() ) : while ( have_posts() ) : the_post();
     endwhile;
     else:
 ?>
-<div class="row">
-    <div class="col-xs-12">
-        <h1>404</h1>
-        <p class="highlight"><?php _e('Post not found.'); ?></highlight>
-    </div>
+<div class="post">
+<h1>404</h1>
+<p class="highlight"><?php _e('Post not found.'); ?></highlight>
 </div>
 <?php
     endif;

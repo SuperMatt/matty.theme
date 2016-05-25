@@ -1,5 +1,6 @@
 html, body {
     height: 100%;
+    margin: 0px;
 }
 
 body {
@@ -21,18 +22,27 @@ body {
     /* background: linear-gradient(#d32f2f, #b71c1c); */
     color: #fafafa;
     font-size: 33pt;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.head a {
+    text-decoration: none;
 }
 
 .navi {
-    position:relative;
     background-color: #ff6f00;
     color: #fafafa;
-    padding-top: 8px;
     font-weight: 400;
 }
 
 .head a, .navi a {
     color: #fafafa;
+}
+
+.post-details {
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .post-details h1 a {
@@ -51,15 +61,27 @@ h1,h2,h3,h4,h5,h6 {
     font-weight: 100;
 }
 
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+    text-decoration: none;
+}
+
+h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
+    text-decoration: underline;
+}
+
 .highlight {
     color: #ff6f00;
 }
 
 .post {
     margin-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .post-spacer {
+    margin-left: 15px;
+    margin-right: 15px;
     margin-top: 30px;
     height:1px;
     margin-bottom: 30px;
@@ -78,41 +100,126 @@ h1,h2,h3,h4,h5,h6 {
 
 .comments {
     border-top: 1px solid #bdbdbd;
+    padding-top: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
 }
 
 .link-btn a {
     display: block;
-    width: 100%;
     text-align: center;
     background-color: #ff6f00;
     color: #fafafa;
-    padding-top: 8px;
-    padding-bottom: 8px;
+    padding-top: 7.5px;
+    padding-bottom: 7.5px;
     padding-left: 15px;
     padding-right: 15px;
     margin-bottom: 15px;
     font-weight: 400;
-    height: 38px;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
+    text-decoration: none;
+}
+
+.link-btn a:hover {
+    text-decoration: underline;
 }
 
 .post-commentnumber {
     padding-top: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .commentnumber {
+    text-decoration: none;
     color: #ff6f00;
 }
 
 .commentnumber:hover {
     color: #ff6f00;
+    text-decoration: underline;
+}
+
+.list-inline {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 7.5px;
+    padding-bottom: 7.5px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.list-inline li{
+    display: inline;
+    padding-right: 15px;
+    margin-top: 0px;
+}
+.list-inline li:first-child {
+    padding-left: 0px;
+}
+.list-inline li:last-child {
+    padding-right: 0px;
+}
+
+.list-inline li a {
+    text-decoration: none;
+}
+
+.list-inline li a:hover {
+    text-decoration: underline;
+}
+
+@media(min-width: 992px) {
+    .main {
+        max-width: 970px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .previous, .next {
+        width: 235px;
+        display: inline-block;
+    }
+
+    .previous {
+        margin-left: 15px;
+        margin-right: 235px;
+    }
+
+    .next {
+        margin-left: 230px;
+        margin-right: 15px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .main {
+        max-width: 750px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .previous, .next {
+        width: 180px;
+        display: inline-block;
+    }
+
+    .previous {
+        margin-left: 15px;
+        margin-right: 180px;
+    }
+
+    .next {
+        margin-left: 175px;
+        margin-right: 15px;
+    }
 }
 
 
 @media (max-width: 767px) {
-    .container {
+    .main {
         padding-left: 0px;
         padding-right: 0px;
     }
