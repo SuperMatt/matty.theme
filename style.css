@@ -46,6 +46,10 @@ body {
     color: #fafafa;
 }
 
+.head a:hover {
+    text-decoration: none;
+}
+
 .post-details {
     padding-left: 15px;
     padding-right: 15px;
