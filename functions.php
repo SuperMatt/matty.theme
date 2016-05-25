@@ -28,6 +28,18 @@ function jeherve_custom_image( $media, $post_id, $args ) {
 }
 add_filter( 'jetpack_images_get_images', 'jeherve_custom_image', 10, 3 );
 
+function fb_home_image( $tags ) {
+    if ( is_home() || is_front_page() ) {
+        // Remove the default blank image added by Jetpack
+        unset( $tags['og:image'] );
+
+        $fb_home_img = 'https://matty.digital/wp-content/uploads/2016/02/IMG_20140308_164816-1.jpg';
+        $tags['og:image'] = esc_url( $fb_home_img );
+    }
+    return $tags;
+}
+add_filter( 'jetpack_open_graph_tags', 'fb_home_image' );
+
 
 
 #add_theme_support( 'post-thumbnails' );
