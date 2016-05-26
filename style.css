@@ -238,12 +238,12 @@ code {
 }
 
 .primary-sidebar li {
-    font-size: 15pt;
     display: inline;
     padding-right: 15px;
 }
 
 .primary-sidebar li a {
+    font-size: 15pt;
     color: #d32f2f;
 }
 
