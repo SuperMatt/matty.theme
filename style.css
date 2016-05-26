@@ -233,6 +233,10 @@ code {
     vertical-align: top;
 }
 
+.primary-sidebar ul {
+    padding-left: 0px;
+}
+
 .primary-sidebar li {
     display: inline;
     padding-right: 15px;
