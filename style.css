@@ -238,6 +238,7 @@ code {
 }
 
 .primary-sidebar li {
+    font-size: 15pt;
     display: inline;
     padding-right: 15px;
 }
