@@ -235,6 +235,7 @@ code {
 
 .primary-sidebar li {
     display: inline;
+    padding-right: 15px;
 }
 
 
