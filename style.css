@@ -242,6 +242,10 @@ code {
     padding-right: 15px;
 }
 
+.primary-sidebar li a {
+    color: #d32f2f;
+}
+
 
 @media(min-width: 992px) {
     .main {
