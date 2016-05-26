@@ -233,6 +233,10 @@ code {
     vertical-align: top;
 }
 
+.primary-sidebar ul {
+    display: inline;
+}
+
 
 @media(min-width: 992px) {
     .main {
