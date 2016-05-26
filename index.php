@@ -1,7 +1,8 @@
 <?php
     get_header();
 ?>
-
+<div class="container">
+<div class="posts">
 <?php
 $postCount = 1;
 if ( have_posts() ) : while ( have_posts() ) : the_post();
@@ -46,6 +47,23 @@ if ( have_posts() ) : while ( have_posts() ) : the_post();
 ?>
 </div>
 
+<?php if (is_single()): ?>
+
+<div class="previous">
+    <div class="link-btn"><?php previous_post_link('%link', 'Previous: %title'); ?></div>
+</div>
+<div class="next">
+    <div class="link-btn"><?php next_post_link('%link', 'Next: %title'); ?></div>
+</div>
+<?php else: ?>
+<div class="previous">
+    <div class="link-btn"><?php previous_posts_link('Newer'); ?></div>
+</div>
+<div class="next">
+    <div class="link-btn"><?php next_posts_link('Older'); ?></div>
+</div>
+<?php endif; ?>
+
 <?php endif; ?>
 
 <?php
@@ -66,7 +84,15 @@ if ( have_posts() ) : while ( have_posts() ) : the_post();
 <?php
     endif;
 ?>
-
+</div>
+<div class="widgets">
+    <?php if ( is_active_sidebar( 'navi_widget' ) ) : ?>
+        <div id="primary-sidebar" class="primary-sidebar widget-area" role="complementary">
+            <?php dynamic_sidebar( 'navi_widget' ); ?>
+        </div><!-- #primary-sidebar -->
+    <?php endif; ?>
+</div>
+</div>
 
 <?php
     get_footer();
