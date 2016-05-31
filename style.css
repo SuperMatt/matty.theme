@@ -216,7 +216,7 @@ code {
 
 .posts {
     display: table-cell;
-    width: calc(100% - 230px);
+    max-width: calc(100% - 230px);
 }
 
 .previous, .next {
