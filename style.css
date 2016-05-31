@@ -171,6 +171,8 @@ pre {
     overflow-x: auto;
     border-radius: 5px;
     max-width: 100%;
+    white-space: pre-wrap;
+    word-wrap: normal;
 }
 
 code {
