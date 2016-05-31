@@ -170,6 +170,7 @@ pre {
     padding: 15px;
     overflow-x: auto;
     border-radius: 5px;
+    max-width: 100%;
 }
 
 code {
